@@ -636,14 +636,101 @@ if 1==1:
 
 
 
+    def before_reattribution5(Nelems):
+        
+        array = np.zeros((len(npar),len(sigpar),len(Mpar),len(obpar),\
+                len(cosipar),Nelems))
+        array[:] = np.nan
+        
+        return array
+        
 
+    def re_attribution_procedure5(lista_read,array,thiselem):
+    
+        counter = 0
+        for i1 in range(0,len(npar_vals)):
+            for i2 in range(0,len(logsigpar_vals)):
+                for i3 in range(0,len(Mpar_vals)):
+                    for i4 in range(0,len(obpar_vals)):
+                        for i5 in range(0,len(cosipar_vals)):
+                            array[i1,i2,i3,i4,i5,thiselem] = lista_read[counter]
+                            counter += 1
+                            
+        return 
+        
+    
+    UBVRI_interp = before_reattribution5(5)
+    re_attribution_procedure5(vals_B,UBVRI_interp,1)
+    re_attribution_procedure5(vals_V,UBVRI_interp,2)
+    re_attribution_procedure5(vals_R,UBVRI_interp,3)
+    re_attribution_procedure5(vals_I,UBVRI_interp,4)
+    poldegUBVRI_interp = before_reattribution5(5)
+    re_attribution_procedure5(vals_poldegB,poldegUBVRI_interp,1)
+    re_attribution_procedure5(vals_poldegV,poldegUBVRI_interp,2)
+    re_attribution_procedure5(vals_poldegR,poldegUBVRI_interp,3)
+    re_attribution_procedure5(vals_poldegI,poldegUBVRI_interp,4)
+    JHK_interp = before_reattribution5(3)
+    re_attribution_procedure5(vals_J,JHK_interp,0)
+    re_attribution_procedure5(vals_H,JHK_interp,1)
+    re_attribution_procedure5(vals_K,JHK_interp,2)
+    VSINI_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_vsini,VSINI_interp,0)
+    ALPHA_WISE_interp = before_reattribution5(3)
+    re_attribution_procedure5(vals_alphaW1W2,ALPHA_WISE_interp,0)
+    re_attribution_procedure5(vals_alphaW2W3,ALPHA_WISE_interp,1)
+    re_attribution_procedure5(vals_alphaW3W4,ALPHA_WISE_interp,2)
+    WISE_interp = before_reattribution5(4)
+    re_attribution_procedure5(vals_MW1,WISE_interp,0)
+    re_attribution_procedure5(vals_MW2,WISE_interp,1)
+    re_attribution_procedure5(vals_MW3,WISE_interp,2)
+    re_attribution_procedure5(vals_MW4,WISE_interp,3)
+    IRAC_interp = before_reattribution5(4)
+    re_attribution_procedure5(vals_MIRAC1,IRAC_interp,0)
+    re_attribution_procedure5(vals_MIRAC2,IRAC_interp,1)
+    re_attribution_procedure5(vals_MIRAC3,IRAC_interp,2)
+    re_attribution_procedure5(vals_MIRAC4,IRAC_interp,3)
+    ALPHAL_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_alphaL,ALPHAL_interp,0)
+    MBL_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_MBL,MBL_interp,0)
+    LINE_HALPHA_interp = before_reattribution5(4)
+    re_attribution_procedure5(vals_Halpha,LINE_HALPHA_interp,0)
+    re_attribution_procedure5(vals_EWHalpha,LINE_HALPHA_interp,1)
+    re_attribution_procedure5(vals_PSHalpha,LINE_HALPHA_interp,2)
+    re_attribution_procedure5(vals_FWHMHalpha,LINE_HALPHA_interp,3)
+    LINE_HUMPHREY14_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu14,LINE_HUMPHREY14_interp,0)
+    LINE_HUMPHREY15_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu15,LINE_HUMPHREY15_interp,0)
+    LINE_HUMPHREY16_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu16,LINE_HUMPHREY16_interp,0)
+    #
+    LINE_HUMPHREY18_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu18,LINE_HUMPHREY18_interp,0)
+    LINE_HUMPHREY19_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu19,LINE_HUMPHREY19_interp,0)
+    LINE_HUMPHREY20_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu20,LINE_HUMPHREY20_interp,0)
+    LINE_HUMPHREY21_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu21,LINE_HUMPHREY21_interp,0)
+    LINE_HUMPHREY22_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu22,LINE_HUMPHREY22_interp,0)
+    LINE_HUMPHREY23_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu23,LINE_HUMPHREY23_interp,0)
+    LINE_HUMPHREY24_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu24,LINE_HUMPHREY24_interp,0)
+    LINE_HUMPHREY25_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Hu25,LINE_HUMPHREY25_interp,0)
+    #
+    LINE_BRALPHA_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Bra,LINE_BRALPHA_interp,0)
+    LINE_PFGAMMA_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_Pfg,LINE_PFGAMMA_interp,0)
+    BL_FLUX_interp = before_reattribution5(1)
+    re_attribution_procedure5(vals_FBL,BL_FLUX_interp,0)
+    
 
-
-
-
-
-
-
+    
 
 
 
